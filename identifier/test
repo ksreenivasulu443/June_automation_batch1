@@ -1,0 +1,11 @@
+count -->correct
+total_count --> correct
+firstName --> correct
+total_amount_3 --> correct
+source_table_name--> correct
+1_transformed_records --> incorrect
+Target count --> incorrect
+except --> incorrect
+print --> incorrect
+source_schema! --> incorrect
+from_source --> correct
