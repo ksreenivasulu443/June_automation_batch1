@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21f4424a-f929-426c-859f-a0e9a438507a" name="Changes" comment="" />
+    <list default="true" id="bdd91681-0283-4bfd-9538-7692b0cf99a2" name="Changes" comment="Added new files to test github" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +17,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/sprint1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -25,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.identifier part2.executor": "Run",
-    "Python.identifier_part1.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.print_module.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/A4952/PycharmProjects/june_automation_batch"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.identifier part2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.identifier_part1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.print_module.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/A4952/PycharmProjects/june_automation_batch&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.print_module">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="June" />
@@ -276,6 +284,10 @@
       <updated>1718594558913</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added new files to test github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new files to test github" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
