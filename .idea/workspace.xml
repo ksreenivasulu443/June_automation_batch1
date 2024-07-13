@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21f4424a-f929-426c-859f-a0e9a438507a" name="Changes" comment="" />
+    <list default="true" id="21f4424a-f929-426c-859f-a0e9a438507a" name="Changes" comment="Added new files to test github" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,18 +25,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.identifier part2.executor": "Run",
-    "Python.identifier_part1.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.print_module.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/A4952/PycharmProjects/june_automation_batch"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.identifier part2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.identifier_part1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.print_module.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/A4952/PycharmProjects/june_automation_batch&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.print_module">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="June" />
@@ -252,10 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.print_module" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.identifier part2" />
+        <item itemvalue="Python.print_module" />
         <item itemvalue="Python.identifier_part1" />
+        <item itemvalue="Python.identifier part2" />
+        <item itemvalue="Python.print_module" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +276,36 @@
       <option name="presentableId" value="Default" />
       <updated>1718594558913</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added new files to test github">
+      <option name="closed" value="true" />
+      <created>1720841262456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720841262456</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added new files to test github">
+      <option name="closed" value="true" />
+      <created>1720841459202</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720841459202</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added new files to test github">
+      <option name="closed" value="true" />
+      <created>1720841617587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720841617587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added new files to test github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new files to test github" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
