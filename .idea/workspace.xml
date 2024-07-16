@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21f4424a-f929-426c-859f-a0e9a438507a" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/control_flows/while_loop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_flows/for_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/control_flows/for_loop.py" afterDir="false" />
     </list>
@@ -46,10 +47,12 @@
     "Python.print_module.executor": "Run",
     "Python.string_slicing.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.while_loop.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/python__chandan",
-    "last_opened_file_path": "C:/Users/A4952/PycharmProjects/june_automation_batch"
+    "last_opened_file_path": "C:/Users/A4952/PycharmProjects/june_automation_batch",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager" selected="Python.for_loop">
@@ -185,8 +188,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="June" />
+    <configuration name="while_loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="June_automation_batch5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,11 +197,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../june_batch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/control_flows" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../june_batch/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/control_flows/while_loop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,10 +293,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.for_loop" />
+        <item itemvalue="Python.while_loop" />
         <item itemvalue="Python.git_practice" />
         <item itemvalue="Python.string_slicing" />
         <item itemvalue="Python.print_module" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
