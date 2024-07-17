@@ -66,12 +66,22 @@
 #             for l in range(30,32):
 #                 print(i,j,k,l)
 
-n=int(input("Enter the number of rows: "))
-for i in range(1,6):
-    for j in range(1,6):
-        print(j,end=' ')
-    print()
+# n=int(input("Enter the number of rows: "))
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(j,end=' ')
+#     print()
+#
+num = 10
+for i in range(1,11):
+    if i == 5:
+        break
+    print(f"i value is {i} and {num}/{i}", num/i)
 
+num = 10
+while num>0:
+    print(num)
+    num = num - 1
 
 
 
