@@ -1,6 +1,7 @@
 #syntax
 import timeit
 
+
 # while condition:
 #     stmts
 
