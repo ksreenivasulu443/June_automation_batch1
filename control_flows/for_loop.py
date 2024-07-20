@@ -30,16 +30,16 @@
 #     sum = sum+i
 # print("sum", sum)
 #
-# ls = [1,2,3,4,5,6,7,8,9,10,11,12,14,15,19,100]
-#
-# even_sum = 0
-# odd_sum = 0
-#
-# for i in ls:
-#     if i % 2 == 0:
-#         even_sum = even_sum + i
-#     else:
-#         odd_sum = odd_sum + i
+ls = [1,2,3,4,5,6,7,8,9,10,11,12,14,15,19,100]
+
+even_sum = 0
+odd_sum = 0
+
+for i in ls:
+    if i % 2 == 0:
+        even_sum = even_sum + i
+    else:
+        odd_sum = odd_sum + i
 #
 # print("total sum", even_sum+odd_sum)
 # print("even sum", even_sum)
@@ -64,6 +64,8 @@ for i in str1:
         str2 = str2+i.lower()
 
 print("Str2", str2)
+
+
 
 
 
