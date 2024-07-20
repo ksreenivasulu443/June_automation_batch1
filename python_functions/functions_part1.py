@@ -35,5 +35,33 @@ def calculation(a,b): # function definition
 # # print("sub", sub)
 # # print("mul", mul)
 
-print(calculation(a=4,b=5))
+#print(calculation(a=4,b=5))
+
+
+#Check Even or Odd
+
+#Write a function to check if two strings are anagrams of each other.
+#Check Even or Odd
+#Factorial Calculation
+#Palindrome Check
+# positive or negative
+#nth Largest Element in an list
+
+def is_eve_or_odd(num):
+    if num %2 == 0:
+        print("even number")
+    else:
+        print("odd number")
+    return 'sreeni'
+
+
+print(is_eve_or_odd(5))
+
+def calculation(a,b):
+    return 2
+    return 0
+
+sum = calculation(5,10)
+print(sum)
+
 
