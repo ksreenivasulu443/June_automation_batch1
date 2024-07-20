@@ -1,6 +1,6 @@
 print("hello world from main.py")
 print("hello world2 from main.py")
-Print("hello")
+print("hello")
 
 # # int x = 5;
 # # int y = 6;
