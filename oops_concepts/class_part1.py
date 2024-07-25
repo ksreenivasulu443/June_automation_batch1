@@ -29,14 +29,12 @@ obj.__init__(5,11)
 
 #print(obj.add())
 #
-# obj2 = Calc(7,9)
+obj2 = Calc(7,9)
+obj3 = Calc(10,11)
 #
 # print(obj2.sub())
 
-def add(a,b):
-    return a+b
 
-add(4,5)
 
 
 class College:
