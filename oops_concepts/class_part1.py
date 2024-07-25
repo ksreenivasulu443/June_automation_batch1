@@ -9,9 +9,12 @@ class Calc:
         self.a = a #this is instance variable
         self.b = b #this is instance variable
 
-    @staticmethod #this is static method, no class & instance variables
-    def area_of_square(l,b): #here l & b are static variables
-        return l*b
+    def add(self):
+        self.c = 100 #inside method creating instance variable
+        return self.a + self.b + self.c
 
 obj = Calc(11,22)
-print(obj.area_of_square(111,222)) #l & b are static variables
+
+print(obj.a, obj.b) #Result --< 11 22
+#here we can access the instance variables with in the class by using self variable
+# & outside the class by using the object reference
