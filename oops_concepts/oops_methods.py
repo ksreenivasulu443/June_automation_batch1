@@ -6,19 +6,24 @@ class Calc:
         self.a = a  # instance variable
         self.b = b  # instance variable
         print("id of self", id(self))
+        Calc.f=100
     def add(self): # instance method
         self.c=360
+        Calc.g=300
         return self.a + self.b
 
     def sub(self): # instance method
         return self.a - self.b
     @classmethod
     def aread_of_circle(cls,r): # class method
+        Calc.h=200
+        cls.j=400
         print("id of cls", id(cls))
         print("a value", cls.a)
         return cls.pi*r*r
     @staticmethod
     def area_square(l,b): # static method
+        Calc.k=500
         return l*b
 
 
@@ -33,11 +38,15 @@ print(obj.add())
 
 print(obj.__dict__)
 
+print(Calc.__dict__)
+
 obj.d=560
 
 print(obj.__dict__)
 
 print(obj.a)
+obj.area_square(5,6)
+print(obj.k)
 
 # print(obj.aread_of_circle(3))
 #

@@ -1,49 +1,59 @@
-class calc():
-    def __init__(self, a,b):
-        self.a=a
-        self.b=b
-        print("this is __init__")
-        print(id(self))
+class Book:
+    def __init__(self, pages):
+        self.pages = pages
 
-    def add(self):
-        return self.a+self.b
-    def sub(self):
-        return self.a-self.b
-    def mul(self):
-        return self.a*self.b
-    def div(self):
-        return self.a/self.b
 
-obj = calc(a=1,b=2)
+b1 = Book(100)
+b2 = Book(200)
+# print(b1 + b2)
 
-#obj2 =  calc(4,5)
 
-print(obj.a)
-print(id(obj))
-print(obj.b)
-print(obj.add())
+class Book:
+    def __init__(self,pages):
+        self.pages=pages
 
-class scientificcal(calc):
-    def __init__(self,a,b):
-        self.a=a
-        self.b =b
+    def __add__(self,other):
+        return self.pages+other.pages
 
-obj = scientificcal(4,5)
+b1=Book(100)
+b2=Book(200)
+print('The Total Number of Pages:',b1+b2)
 
-print("add poly", obj.add())
+a=5
 
-class BankAccount:
-    def __init__(self, initial_balance=0):
-        self.__balance = initial_balance  # Private attribute
 
-    def deposit(self, amount):
-        if amount > 0:
-            self.__balance += amount
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def __gt__(self,other):
+        return self.marks>other.marks
+    def __le__(self,other):
+        return self.marks<=other.marks
 
-    def get_balance(self):
-        return self.__balance
+print("10>20 =",10>20)
 
-# Access to the balance is controlled through methods
-account = BankAccount(100)
-account.deposit(50)
-print(account.get_balance())  # Output: 150
+s1=Student("Durga",100)
+s2=Student("Ravi",200)
+print("s1>s2=",s1>s2)
+print("s1<s2=",s1<s2)
+print("s1<=s2=",s1<=s2)
+print("s1>=s2=",s1>=s2)
+
+class Test:
+    def m1(self):
+        print('no-arg method')
+    def m1(self,a):
+        print('one-arg method')
+    def m1(self,a,b):
+        print('two-arg method')
+
+class Test2(Test):
+    def m3(self,a,b,c):
+        print("3 args")
+
+obj = Test2()
+
+obj.m3(4,5)
+
+
