@@ -2,45 +2,54 @@ from abc import ABC, abstractmethod
 
 
 # Define an abstract class
-class Animal(ABC):
-
+class Animal(ABC):  # Animal is parent class and inheriting ABC class
     @abstractmethod
     def make_sound(self):
-        """Abstract method that subclasses must implement"""
         pass
 
+    @abstractmethod
     def move(self):
-        """Concrete method with implementation"""
-        print("The animal moves")
+        pass
+    def new_method(self):
+        print("new method")
 
 
-# Define a subclass that implements the abstract method
-class Dog(Animal):
-
+class Dog(Animal): # child class must have parent abstract methods implementation
     def make_sound(self):
-        return "Woof"
+        print("make sound method")
 
     def move(self):
-        """Optionally override the concrete method"""
-        print("The dog runs")
+        print("move method")
+    def new_method(self):
+        print("new method")
 
 
-# Define another subclass that implements the abstract method
-class Cat(Animal):
-
+class Cat(Animal): # child class must have parent abstract methods implementation
     def make_sound(self):
-        return "Meow"
+        print("make sound method")
+
+    def move(self):
+        print("this cat class move method")
+
+obj = Animal()
 
 
-    # This subclass does not override the move method
-# Instantiate the subclasses
+#obj = Animal() # will fail beacuse Animal is abstract class
 
-dog = Dog()
-cat = Cat()
 
-# Call the implemented methods
-print(dog.make_sound())  # Output: Woof
-dog.move()  # Output: The dog runs
+# obj = Dog()
+#
+# obj.make_sound()
+# obj.move()
+# obj.new_method()
 
-print(cat.make_sound())  # Output: Meow
-cat.move()  # Output: The animal moves (inherited from the abstract class)
+obj2 = Cat()
+obj2.move()
+obj2.make_sound()
+
+obj2.new_method()
+
+obj3 = Cat()
+
+# obj.Dog_sound()
+# obj.make_sound()
