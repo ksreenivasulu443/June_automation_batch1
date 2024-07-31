@@ -1,115 +1,94 @@
-# class Father():
-#     def __init__(self):
-#         print("this is constuctor")
-#
-#     def property(self):
-#         print("this is father parent and ready to construct")
+# from abc import ABC, abstractmethod
 #
 #
-# class child(Father):
-#     def property2(self):
-#         print("Father has not built any building lets starts building")
-#         print("costructions started")
-#         print("construction has been completed")
+# # Define an abstract class
+# class Animal(ABC):
 #
-# class child2(Father):
-#     def property(self):
-#         print("Father has not built any building lets keep this property as is")
-#
-#
-# child1 = child()
-#
-# child1.property()
-#
-# child2 = child2()
-#
-# child2.property()
+#     # Define an abstract method
+#     @abstractmethod
+#     def make_sound(self):
+#         return "hello"
+#     @abstractmethod
+#     def make_sount2(self):
+#         pass
 #
 #
+# # Define a subclass that implements the abstract method
+# class Dog(Animal):
+#
+#     def make_sound(self):
+#         return "Woof"
+#     def make_sount2(self):
+#         pass
 #
 #
+# # Define another subclass that implements the abstract method
+# class Cat(Animal):
+#
+#     def make_sound(self):
+#         return "Meow"
+#     def make_sount2(self):
+#         pass
 #
 #
-#
-# # class Character:
-# #     def __init__(self, name, health):
-# #         self.name = name
-# #         self.health = health
-# #
-# #     def attack(self):
-# #         print("parent class")
-# #
-# # class Hero(Character):
-# #     def attack(self):
-# #         print(f"{self.name} attacks with a sword!")
-# #
-# # class Villain(Character):
-# #     def attack(self):
-# #         print(f"{self.name} attacks with dark magic!")
-# #
-# # obj = Villain(name='Sreeni', health='nice')
-# #
-# # obj.attack()
+# # Try to instantiate the abstract class (this will raise an error)
+# #animal = Animal()
 #
 #
+# # Instantiate the subclasses
+# dog = Dog()
+# cat = Cat()
 #
-#
-class ETLTest:
-    def __init__(self, name):
-        self.name = name
-        print("parent constructor")
+# # Call the implemented methods
+# print(dog.make_sound())  # Output: Woof
+# print(cat.make_sound())  # Output: Meow
 
 
-    def run(self):
-        raise NotImplementedError("Subclasses should implement this method.")
+# class MyClass:
+#     def __init__(self, value):
+#         self.value = value  # Public attribute
+#
+#     def public_method(self):
+#         return self.value  # Public method
+#
+# obj = MyClass(10)
+# print(obj.value)  # Accessing public attribute
+# print(obj.public_method())  # Accessing public method
 
-    def validate(self):
-        raise NotImplementedError("Subclasses should implement this method.")
-
-    def execute(self):
-        self.run()
-        self.validate()
-
-
-
-
-class CountVerificationTest(ETLTest):
-    def __init__(self, name, source_count, target_count):
-        super().__init__(name)
-        self.source_count = source_count
-        self.target_count = target_count
-
-    def run(self):
-        print(f"Running count verification for test: {self.name}")
-        print(f"Source count: {self.source_count}, Target count: {self.target_count}")
-
-    def validate(self):
-        print(f"Validating count for test: {self.name}")
-        if self.source_count == self.target_count:
-            print("Count verification passed: Record counts match.")
-        else:
-            print("Count verification failed: Record counts do not match.")
+# class MyClass:
+#     def __init__(self, value):
+#         self._value = value  # Protected attribute
+#
+#     def _protected_method(self):
+#         return self._value  # Protected method
+#
+# obj = MyClass(20)
+# print(obj._value)  # Accessing protected attribute (not recommended)
+# print(obj._protected_method())  # Accessing protected method (not recommended)
 
 
-source_count = 1000
-target_count = 1000
+class MyClass:
+    def __init__(self, value):
+        self.__value = value  # Private attribute
 
-# Creating and executing a count verification test
-count_test = CountVerificationTest("Customer Data Count Verification", source_count, target_count)
-count_test.execute()
+    def __private_method(self):
+        return self.__value  # Private method
+
+    def get_value(self):
+        return self.__value  # Public method to access private attribute
+
+obj = MyClass(30)
+# print(obj.__value)  # AttributeError: 'MyClass' object has no attribute '__value'
+# print(obj.__private_method())  # AttributeError: 'MyClass' object has no attribute '__private_method'
+#
+# # Accessing private attributes and methods indirectly
+print(obj.get_value())
 
 
-class Test:
-    def __init__(self):
-        print("parent constructor")
 
-    def method(self):
-        print("parent method")
 
-class Test2(Test):
-    def __init__(self):
-        print("child cons")
-    def method(self):
-        print("child method")
 
-Test2()
+
+
+
+
