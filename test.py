@@ -1,93 +1,57 @@
-# from abc import ABC, abstractmethod
-#
-#
-# # Define an abstract class
-# class Animal(ABC):
-#
-#     # Define an abstract method
-#     @abstractmethod
-#     def make_sound(self):
-#         return "hello"
-#     @abstractmethod
-#     def make_sount2(self):
-#         pass
-#
-#
-# # Define a subclass that implements the abstract method
-# class Dog(Animal):
-#
-#     def make_sound(self):
-#         return "Woof"
-#     def make_sount2(self):
-#         pass
-#
-#
-# # Define another subclass that implements the abstract method
-# class Cat(Animal):
-#
-#     def make_sound(self):
-#         return "Meow"
-#     def make_sount2(self):
-#         pass
-#
-#
-# # Try to instantiate the abstract class (this will raise an error)
-# #animal = Animal()
-#
-#
-# # Instantiate the subclasses
-# dog = Dog()
-# cat = Cat()
-#
-# # Call the implemented methods
-# print(dog.make_sound())  # Output: Woof
-# print(cat.make_sound())  # Output: Meow
+import numpy as np
 
+from pandasql import sqldf
 
-# class MyClass:
-#     def __init__(self, value):
-#         self.value = value  # Public attribute
-#
-#     def public_method(self):
-#         return self.value  # Public method
-#
-# obj = MyClass(10)
-# print(obj.value)  # Accessing public attribute
-# print(obj.public_method())  # Accessing public method
+array1 = np.array([[1,2,3,5],[5,6,7,7],[7,8,9,10]])
 
-# class MyClass:
-#     def __init__(self, value):
-#         self._value = value  # Protected attribute
-#
-#     def _protected_method(self):
-#         return self._value  # Protected method
-#
-# obj = MyClass(20)
-# print(obj._value)  # Accessing protected attribute (not recommended)
-# print(obj._protected_method())  # Accessing protected method (not recommended)
+array2 = np.array([1,'a','c'])
 
+print(array1)
 
-class MyClass:
-    def __init__(self, value):
-        self.__value = value  # Private attribute
+print(type(array2))
 
-    def __private_method(self):
-        return self.__value  # Private method
-
-    def get_value(self):
-        return self.__value  # Public method to access private attribute
-
-obj = MyClass(30)
-# print(obj.__value)  # AttributeError: 'MyClass' object has no attribute '__value'
-# print(obj.__private_method())  # AttributeError: 'MyClass' object has no attribute '__private_method'
-#
-# # Accessing private attributes and methods indirectly
-print(obj.get_value())
+print(type(array2[1]))
+print(type(array2[2]))
 
 
 
+import pandas as pd
+
+df = pd.DataFrame(data=array1, columns=['col1','col2','col3','col4'])
+
+print(df.head())
+
+import pandas as pd
+
+# Dictionary with lists as values
+data_dict = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+
+# Creating DataFrame
+df_from_dict = pd.DataFrame(data_dict)
+
+print(df_from_dict)
+
+print("sqldf")
+print(sqldf("select name from df_from_dict"))
 
 
+import pandas as pd
+
+# List of lists
+data_list = [
+    ['Alice', 25, 'New York'],
+    ['Bob', 30, 'Los Angeles'],
+    ['Charlie', 35, 'Chicago']
+]
+
+# Creating DataFrame
+df_from_list = pd.DataFrame(data_list, columns=['Name', 'Age', 'City'])
+
+print(df_from_list)
 
 
 
