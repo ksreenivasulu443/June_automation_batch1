@@ -8,7 +8,7 @@ print(series)
 print("series['a']", series['a'])
 print("series['e']", series['e'])
 
-df = pd.DataFrame(series)
+df = pd.DataFrame(data=series)
 
 print(df.head(3))
 
@@ -20,7 +20,7 @@ data_dict = {
 }
 
 # Creating DataFrame
-df_from_dict = pd.DataFrame(data_dict)
+df_from_dict = pd.DataFrame(data=data_dict)
 
 print(df_from_dict.tail(3))
 
@@ -32,7 +32,7 @@ data_list = [
 ]
 
 # Creating DataFrame
-df_from_list = pd.DataFrame(data_list, columns=['Name', 'Age', 'City'])
+df_from_list = pd.DataFrame(data=data_list, columns=['Name', 'Age', 'City'])
 
 print(df_from_list.head(2))
 
