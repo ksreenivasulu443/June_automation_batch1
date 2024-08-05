@@ -104,7 +104,7 @@ print("concat axis=0")
 concat_df_cols_0 = pd.concat([df1, df2], axis=0)
 print(concat_df_cols_0)
 print("concat axis=1")
-concat_df_cols_1 = pd.concat([df1, df2], axis=0)
+concat_df_cols_1 = pd.concat([df1, df2], axis=1)
 print(concat_df_cols_1)
 
 
