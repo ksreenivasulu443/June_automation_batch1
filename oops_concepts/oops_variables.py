@@ -22,7 +22,7 @@ class Calc:
 
 obj = Calc(4, 5)
 print("id of obj", id(obj))
-obj.
+
 
 print("id of obj", id(obj))
 
