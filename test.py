@@ -1,8 +1,20 @@
-with open('output.txt', 'w') as file:
-    print("Writing to a file.", file=file)
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-import time
+class JackRussellTerrier(Dog):
+    pass
 
-print("Starting...", end="", flush=False)
-time.sleep(2)
-print(" Done!")
+class Dachshund(Dog):
+    pass
+
+class Bulldog(Dog):
+    pass
+
+miles = JackRussellTerrier("Miles", 4)
+buddy = Dachshund("Buddy", 9)
+jack = Bulldog("Jack", 3)
+jim = Bulldog("Jim", 5)
+
+print(isinstance(miles, Dog))

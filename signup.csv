@@ -1,0 +1,9 @@
+First Name,Last Name,Phone Number,Country,Email Address,Password
+Erica,Spencer,2213296728,El Salvador,bstevens@example.net,JO2GfCOf@#yY
+Alex,Lee,1234567890,USA,alex.lee@gmail.com,A1b2C3d4E5
+Christopher Alexander Hamilton,Smithson-Jones,123456789012,United States of America,longnameemailaddress@gmail.com,AbcdefGhiJklmnopQrsTuvWxyZ12345!
+J0hn,O'Neill,123-456-7890,U,invalid.email@domain.com,pass
+A,O'Neill,12345,U,shortemail@gmail.com,short
+John,O'Neill,1234567890123,United States,verylongemailaddresswithaverylongdomainname@gmail.com,LongPasswordThatExceedsTheMaximumLengthOfTwentyCharacters!
+John,O'Neill,1234567890,USA,a@b.co,password123
+John,O'Neill,1234567890,USA,john.doe@yahoo.com,PASSWORD1234
