@@ -9,3 +9,5 @@ print(df)
 Result = ProfileReport(df)
 Result.to_file("profile_report.html")
 
+
+
