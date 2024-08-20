@@ -1,8 +1,5 @@
 from pyspark.sql import SparkSession
 
-
-
-
 snow_jar = r"C:\Users\A4952\PycharmProjects\June_automation_batch1\jars\snowflake-jdbc-3.14.3.jar"
 
 

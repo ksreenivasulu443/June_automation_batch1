@@ -11,7 +11,7 @@ df2 = spark.read.format("jdbc"). \
     option("url", "jdbc:postgresql://localhost:5432/postgres"). \
     option("user", "postgres"). \
     option("password", "Dharmavaram1@"). \
-    option("query", "select * from contact_info_raw"). \
+    option("dbtable", "contact_info_raw"). \
     option("driver", "org.postgresql.Driver").load()
 
 df2.show()
