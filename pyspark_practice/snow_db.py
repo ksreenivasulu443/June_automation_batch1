@@ -23,3 +23,11 @@ df = spark.read \
 
 df.show()
 
+df.createOrReplaceTempView('df1')
+
+spark.sql("select * from df1 where IDENTIFIER =12").show()
+
+df.select("*").filter("IDENTIFIER =10").show()
+
+# csv, json, parquet, avro, fixed length file, snowflake, postgres, oracle, sqlserver, hbase/cosmos/dynamo, trino, presto db,
+
