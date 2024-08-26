@@ -7,6 +7,10 @@ df.createGlobalTempView('ipldata') # CreateTempView will not allow you create vi
 
 #df.createOrReplaceTempView('ipldata') # CreateOr ReplaceTempView will replace view if already exist or if not exist create new view
 
-df2 = spark.sql(" select * from ipldata where city='Bangalore' ")
+#df2 = spark.sql(" select * from ipldata where city='Bangalore' ")
 
-df2.show()
+#df2.show()
+
+df.createTempView("ipldata1")
+
+spark.sql("select * from ipldata1").show()
