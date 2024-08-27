@@ -49,7 +49,7 @@ df.columns = ["seller_id", "seller_name", "daily_target"]
 df.to_csv("sellers.csv", index=False)
 
 #   Generate sales
-total_rows = 1000
+total_rows = 10000
 prod_zero = int(total_rows * 0.95)
 prod_others = total_rows - prod_zero + 1
 df_array = [["order_id", "product_id", "seller_id", "date", "num_pieces_sold", "bill_raw_text"]]
